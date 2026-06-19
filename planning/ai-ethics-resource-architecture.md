@@ -2,6 +2,8 @@
 
 Working purpose: organize AI ethics resources for teacher educator faculty who are preparing preservice teachers to understand, evaluate, and responsibly integrate AI in educational settings.
 
+Current working focus: Ethics of AI. The broader hub can eventually connect to all five UNESCO dimensions, but the immediate curation work should prioritize the Ethics of AI strand and its connections to classroom decision-making, educational use cases, and preservice teacher preparation.
+
 This plan uses UNESCO's AI Competency Framework for Teachers as a guide, but not as the only structure. The public-facing hub should help faculty quickly find teachable resources, while also helping preservice teachers build ethical judgment for classroom use.
 
 ## Primary Audiences
@@ -31,7 +33,7 @@ Preservice teachers need to understand AI broadly, but also in relation to their
 
 ## Organizing Spine
 
-Use the UNESCO framework as a crosswalk, not as the navigation by itself.
+Use the UNESCO framework as a crosswalk, not as the navigation by itself. For the current phase, use the Ethics of AI dimension as the primary filter while noting meaningful connections to the other dimensions.
 
 UNESCO dimensions:
 
@@ -48,6 +50,14 @@ UNESCO progression levels:
 3. Create: leadership, adaptation, policy, and innovation
 
 For this hub, resources should be tagged by both dimension and level, but the site navigation should use teacher-friendly categories.
+
+Current curation priority:
+
+1. Ethics of AI as the primary dimension.
+2. Human-centred mindset as a close companion, because ethical AI use in education depends on human agency, accountability, and learner well-being.
+3. AI pedagogy as the applied context, because preservice teachers need to make ethical decisions inside lesson design, assessment, feedback, and student AI use.
+4. AI foundations and applications only as needed to help learners understand ethical risks.
+5. AI for professional learning only when faculty or preservice teachers are considering their own responsible AI use.
 
 ## Recommended Site Navigation
 
@@ -263,4 +273,3 @@ Priority: high / medium / low
 The hub should answer a practical question for faculty:
 
 "I teach future teachers. What AI ethics resource can I use this week, and what does it help preservice teachers learn to notice, question, decide, or do?"
-
