@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Team AI Session 3 | AI Ethics Resource Hub</title>
+    <meta
+      name="description"
+      content="A shareable AI ethics resource hub for Team AI Session 3, focused on the ethics of AI production, environmental costs, resource extraction, labor, and classroom-ready activities."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <nav class="top-nav" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="Team AI home">
+          <span class="brand-mark" aria-hidden="true">AI</span>
+          <span>Team AI Ethics</span>
+        </a>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span class="menu-lines" aria-hidden="true"></span>
+          <span class="sr-only">Menu</span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#session">Session</a>
+          <a href="#lesson">Lesson</a>
+          <a href="#activities">Activities</a>
+          <a href="#resources">Resources</a>
+          <a href="#reuse">Reuse</a>
+        </div>
+      </nav>
+
+      <section class="hero" aria-labelledby="page-title">
+        <img src="assets/ai-ethics-production-hero.png" alt="A data center scene with subtle visual connections to energy, water, supply chains, and classroom learning.">
+        <div class="hero-overlay">
+          <p class="eyebrow">Team AI Session 3</p>
+          <h1 id="page-title">AI Ethics: What It Costs to Build AI</h1>
+          <p>
+            A public-facing resource hub for colleagues and students exploring the hidden
+            environmental, material, and social costs behind AI systems.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#lesson">Start the lesson</a>
+            <a class="button secondary" href="#reuse">Share or adapt</a>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="band intro-band" id="session">
+        <div class="section-inner two-column">
+          <div>
+            <p class="eyebrow">For facilitators</p>
+            <h2>Session at a glance</h2>
+            <p class="lead">
+              This version translates the Canvas page into a broader teaching resource.
+              It keeps the spirit of the original lesson while replacing Canvas-only
+              elements with web-friendly structures.
+            </p>
+          </div>
+          <div class="overview-panel" aria-label="Session details">
+            <dl>
+              <div>
+                <dt>Focus</dt>
+                <dd>Ethics of AI production</dd>
+              </div>
+              <div>
+                <dt>Essential question</dt>
+                <dd>What should we consider before deciding an AI use is worth its cost?</dd>
+              </div>
+              <div>
+                <dt>Learning target</dt>
+                <dd>I can evaluate the hidden environmental and resource costs of building and using AI systems.</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="band">
+        <div class="section-inner">
+          <div class="resource-strip" aria-label="Reusable teacher moves">
+            <article>
+              <span class="mini-icon">1</span>
+              <h3>Open With a Poll</h3>
+              <p>Ask what learners think is the biggest cost of AI before revealing the broader supply chain.</p>
+            </article>
+            <article>
+              <span class="mini-icon">2</span>
+              <h3>Trace the System</h3>
+              <p>Move from energy and water to hardware, mining, shipping, data centers, and e-waste.</p>
+            </article>
+            <article>
+              <span class="mini-icon">3</span>
+              <h3>End With Judgment</h3>
+              <p>Have learners decide when an AI application is worth its environmental and social cost.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="band lesson-band" id="lesson">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Core lesson</p>
+            <h2>Costs of Building AI</h2>
+            <p>
+              Adapted from the Canvas lesson page you shared. The lesson is organized
+              as a guided path that colleagues can teach directly or remix.
+            </p>
+          </div>
+
+          <div class="lesson-layout">
+            <aside class="lesson-nav" aria-label="Lesson sections">
+              <a href="#warmup">Warm-up</a>
+              <a href="#energy">Energy</a>
+              <a href="#water">Water</a>
+              <a href="#hardware">Hardware</a>
+              <a href="#carbon">Carbon</a>
+              <a href="#supply-chain">Supply chain</a>
+              <a href="#judgment">Judgment</a>
+            </aside>
+
+            <div class="lesson-content">
+              <article class="lesson-card" id="warmup">
+                <div class="card-kicker">Warm-up</div>
+                <h3>Before We Start: A Quick Question</h3>
+                <p>
+                  Invite students to predict the biggest hidden cost of AI. Their first
+                  answers create a useful baseline for the rest of the lesson.
+                </p>
+                <div class="embed-box">
+                  <iframe
+                    title="StrawPoll warm-up poll"
+                    src="https://strawpoll.com/embed/2ayLQBq4Vn4"
+                    loading="lazy"
+                    allowfullscreen>
+                  </iframe>
+                </div>
+                <p class="note">
+                  If the embedded poll is not available, replace this with a Google Form,
+                  Microsoft Form, Mentimeter, Poll Everywhere, or an in-room show of hands.
+                </p>
+              </article>
+
+              <article class="lesson-card" id="energy">
+                <div class="card-kicker">Part 1</div>
+                <h3>The Energy Appetite of AI</h3>
+                <p>
+                  Every AI interaction depends on electricity: during model training,
+                  during deployment, and during each user request. Simple text queries
+                  may be relatively small per use, but heavier tasks and enormous usage
+                  volume change the ethical picture.
+                </p>
+
+                <div class="table-wrap" tabindex="0" aria-label="Energy comparison table">
+                  <table>
+                    <caption>Energy Use Estimates</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Activity</th>
+                        <th scope="col">Estimated energy use</th>
+                        <th scope="col">Everyday comparison</th>
+                        <th scope="col">Relative scale</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Typical Google search</td>
+                        <td>~0.2 to 0.3 Wh</td>
+                        <td>Power a small LED bulb for about 18 minutes</td>
+                        <td>Baseline</td>
+                      </tr>
+                      <tr>
+                        <td>ChatGPT, GPT-3-era</td>
+                        <td>~2 to 4 Wh</td>
+                        <td>Charge a phone about one-fifth to one-third</td>
+                        <td>10 to 20x a Google search</td>
+                      </tr>
+                      <tr>
+                        <td>ChatGPT, GPT-4 or GPT-4o-style text query</td>
+                        <td>~0.3 to 0.5 Wh</td>
+                        <td>Keep a small LED bulb lit for 18 to 30 minutes</td>
+                        <td>Roughly similar to, or slightly higher than, a search</td>
+                      </tr>
+                      <tr>
+                        <td>Complex multimodal query</td>
+                        <td>~1 to 2 Wh</td>
+                        <td>Power a laptop for 2 to 4 minutes</td>
+                        <td>5 to 10x a Google search</td>
+                      </tr>
+                      <tr>
+                        <td>AI image generation</td>
+                        <td>~10 to 50 Wh</td>
+                        <td>Fully charge 1 to 2 smartphones</td>
+                        <td>50 to 200x a Google search</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="callout">
+                  <strong>Bottom line:</strong>
+                  Per-query efficiency is improving, but total energy use keeps rising
+                  as AI use expands and tasks become more computationally demanding.
+                </div>
+
+                <details class="teacher-note">
+                  <summary>Teaching move</summary>
+                  <p>
+                    Ask students to compare per-use impact with system-wide impact.
+                    A small number multiplied billions of times becomes an ethical issue.
+                  </p>
+                </details>
+              </article>
+
+              <article class="lesson-card media-card">
+                <div>
+                  <div class="card-kicker">Video</div>
+                  <h3>Watch: Data Centers and Energy Demand</h3>
+                  <p>
+                    As learners watch, have them track how AI demand might reshape
+                    electricity grids, data center locations, consumer costs, and local
+                    environmental trade-offs.
+                  </p>
+                </div>
+                <div class="video-frame">
+                  <iframe
+                    title="YouTube video player"
+                    src="https://www.youtube.com/embed/v3Q_uC5P1hE"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                  </iframe>
+                </div>
+              </article>
+
+              <article class="lesson-card" id="water">
+                <div class="card-kicker">Part 2</div>
+                <h3>Water, Cooling, and Local Trade-offs</h3>
+                <p>
+                  Data centers generate heat, and many facilities depend on water-based
+                  cooling. The ethical question is not only how much water is used, but
+                  where it is used and who else needs it.
+                </p>
+                <ul class="clean-list">
+                  <li>Some estimates place Google data center water use near 6 billion gallons of fresh water in 2023.</li>
+                  <li>Training GPT-3 has been estimated to directly consume about 700,000 liters of water for cooling, with more indirect water use tied to energy production.</li>
+                  <li>Some reports estimate an average data center can use about 300,000 gallons of water per day.</li>
+                  <li>Chip manufacturing can require large amounts of ultra-pure water.</li>
+                </ul>
+                <div class="prompt-box">
+                  <h4>Discussion scenario</h4>
+                  <p>
+                    Your city is experiencing a drought. A tech company wants to build
+                    an AI data center that will use 500 million gallons of water per
+                    year but create 200 jobs. Would you support it? Why or why not?
+                  </p>
+                </div>
+              </article>
+
+              <article class="lesson-card" id="hardware">
+                <div class="card-kicker">Part 3</div>
+                <h3>E-Waste and the Hardware Problem</h3>
+                <p>
+                  AI is not only software. It depends on servers, GPUs, cooling systems,
+                  network infrastructure, and device upgrades. Those material needs
+                  connect AI to mining, manufacturing, and e-waste.
+                </p>
+                <div class="tabs" data-tabs>
+                  <div class="tab-list" role="tablist" aria-label="Hardware topics">
+                    <button type="button" role="tab" aria-selected="true" aria-controls="gpu-panel" id="gpu-tab">GPU problem</button>
+                    <button type="button" role="tab" aria-selected="false" aria-controls="mining-panel" id="mining-tab">Mining cost</button>
+                  </div>
+                  <div class="tab-panel is-active" role="tabpanel" id="gpu-panel" aria-labelledby="gpu-tab">
+                    <p>AI training can require thousands of GPUs running continuously. These systems can become obsolete quickly and require minerals such as lithium, cobalt, tantalum, silicon, and rare earth elements.</p>
+                  </div>
+                  <div class="tab-panel" role="tabpanel" id="mining-panel" aria-labelledby="mining-tab" hidden>
+                    <p>Mineral extraction can displace communities, pollute water, destroy habitats, and rely on exploitative labor practices. The physical footprint of AI starts far from the screen.</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="lesson-card" id="carbon">
+                <div class="card-kicker">Part 4</div>
+                <h3>Carbon Emissions and Climate Impact</h3>
+                <p>
+                  Energy demand becomes a climate issue when the electricity mix still
+                  includes fossil fuels. Even when companies buy renewable energy,
+                  growing demand can outpace new clean power.
+                </p>
+                <div class="stat-grid">
+                  <div>
+                    <span class="stat">24/7</span>
+                    <p>Data centers run continuously, not only when learners use a tool.</p>
+                  </div>
+                  <div>
+                    <span class="stat">2-3 years</span>
+                    <p>High-demand hardware may become outdated quickly.</p>
+                  </div>
+                  <div>
+                    <span class="stat">Billions</span>
+                    <p>Small per-query costs grow when scaled across global usage.</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="lesson-card" id="supply-chain">
+                <div class="card-kicker">Systems thinking</div>
+                <h3>From Rock to Screen</h3>
+                <p>
+                  Your AI conversation began before you typed a question. It moved
+                  through extraction, processing, manufacturing, shipping, data centers,
+                  interfaces, and disposal.
+                </p>
+                <div class="timeline" aria-label="AI production supply chain">
+                  <div><span>1</span><strong>Mining</strong><p>Cobalt, lithium, silicon, and rare earth elements enter the chain.</p></div>
+                  <div><span>2</span><strong>Processing</strong><p>Raw materials are refined, often with toxic waste and local impacts.</p></div>
+                  <div><span>3</span><strong>Manufacturing</strong><p>Chips, servers, and devices require water, energy, and labor.</p></div>
+                  <div><span>4</span><strong>Shipping</strong><p>Components move through global logistics networks.</p></div>
+                  <div><span>5</span><strong>Data centers</strong><p>Facilities use electricity, cooling, land, and infrastructure.</p></div>
+                  <div><span>6</span><strong>Your screen</strong><p>Users experience the tool while much of the impact remains hidden.</p></div>
+                  <div><span>7</span><strong>E-waste</strong><p>Obsolete hardware creates disposal and toxic exposure problems.</p></div>
+                </div>
+              </article>
+
+              <article class="lesson-card" id="judgment">
+                <div class="card-kicker">Part 7</div>
+                <h3>So Should We Stop Using AI?</h3>
+                <p>
+                  The productive ethical stance is not panic or blind optimism. AI may
+                  help optimize energy grids, model climate systems, improve materials,
+                  or reduce waste. The question is whether a particular use is worth
+                  its costs and who gets to decide.
+                </p>
+                <div class="question-grid">
+                  <div>Who benefits from this AI system?</div>
+                  <div>Who bears the environmental or social cost?</div>
+                  <div>Is there a less resource-intensive way to do this?</div>
+                  <div>Is this application worth its hidden price tag?</div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="band activities-band" id="activities">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Reusable learning activities</p>
+            <h2>Activities colleagues can lift into their own classes</h2>
+          </div>
+
+          <div class="activity-grid">
+            <article class="activity-card">
+              <div class="card-kicker">10 minutes</div>
+              <h3>AI Carbon Footprint Check</h3>
+              <p>
+                Students estimate how their AI usage adds up over time, then reflect
+                on whether the result changes their choices.
+              </p>
+              <a href="https://learn.wab.edu/innovation/ai/faculty/ethics/aifootprint" target="_blank" rel="noopener">Open WAB Learns calculator</a>
+            </article>
+            <article class="activity-card">
+              <div class="card-kicker">15 minutes</div>
+              <h3>Worth the Cost?</h3>
+              <p>
+                Give groups different AI use cases and ask them to decide whether the
+                benefits justify the energy, water, labor, and material impacts.
+              </p>
+              <button class="text-button" type="button" data-copy="#worth-cost-prompt">Copy prompt</button>
+            </article>
+            <article class="activity-card">
+              <div class="card-kicker">20 minutes</div>
+              <h3>Supply Chain Map</h3>
+              <p>
+                Learners draw the path from mineral extraction to model use and e-waste,
+                then mark who benefits and who is affected at each stage.
+              </p>
+              <button class="text-button" type="button" data-copy="#supply-chain-prompt">Copy prompt</button>
+            </article>
+            <article class="activity-card">
+              <div class="card-kicker">Exit ticket</div>
+              <h3>Ethical AI Use Commitment</h3>
+              <p>
+                Students name one AI use they will continue, one use they will avoid,
+                and one question they will ask before using a tool.
+              </p>
+              <button class="text-button" type="button" data-copy="#exit-ticket-prompt">Copy prompt</button>
+            </article>
+          </div>
+
+          <template id="worth-cost-prompt">Choose one AI use case. Who benefits? Who bears the cost? What energy, water, labor, material, or climate impacts might be hidden? Is this use worth it? Explain your reasoning.</template>
+          <template id="supply-chain-prompt">Map the AI supply chain from minerals to user interaction to disposal. At each stage, identify resources used, communities affected, and ethical questions that should be asked.</template>
+          <template id="exit-ticket-prompt">Before I use an AI tool, I will ask: What problem am I solving? Is AI necessary? Who or what might be affected by this use? What is one lower-impact alternative?</template>
+
+          <div class="calculator" aria-labelledby="calculator-title">
+            <div>
+              <p class="eyebrow">Optional classroom tool</p>
+              <h3 id="calculator-title">Quick Usage Reflection</h3>
+              <p>
+                This is not a scientific calculator. It is a conversation starter that
+                helps learners see how frequency and task type change the scale of impact.
+              </p>
+            </div>
+            <form class="calc-form">
+              <label>
+                Text AI queries per week
+                <input type="number" min="0" value="25" id="textQueries">
+              </label>
+              <label>
+                Image generations per week
+                <input type="number" min="0" value="3" id="imageQueries">
+              </label>
+              <output id="usageResult" aria-live="polite"></output>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="band resources-band" id="resources">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Curated resources</p>
+            <h2>Readings, media, and checkpoints</h2>
+          </div>
+          <div class="link-grid">
+            <a href="https://www.scientificamerican.com/article/ai-will-drive-doubling-of-data-center-energy-demand-by-2030/" target="_blank" rel="noopener">
+              <span>Reading</span>
+              AI and data center energy demand
+            </a>
+            <a href="https://www.npr.org/sections/goatsandsoda/2023/02/01/1152893248/red-cobalt-congo-drc-mining-siddharth-kara" target="_blank" rel="noopener">
+              <span>Reading</span>
+              Cobalt, labor, and battery supply chains
+            </a>
+            <a href="https://hir.harvard.edu/not-so-green-technology-the-complicated-legacy-of-rare-earth-mining/" target="_blank" rel="noopener">
+              <span>Reading</span>
+              Rare earth mining and environmental costs
+            </a>
+            <a href="https://www.npr.org/sections/goats-and-soda/2024/10/05/g-s1-6411/electronics-public-health-waste-ghana-phones-computers" target="_blank" rel="noopener">
+              <span>Photo essay</span>
+              E-waste and public health
+            </a>
+          </div>
+
+          <article class="lesson-card checkpoint">
+            <div>
+              <div class="card-kicker">Checkpoint</div>
+              <h3>Module 5.1 Self-check</h3>
+              <p>
+                Use this embedded H5P checkpoint if public access is enabled. If not,
+                recreate the two-question quiz in H5P, Forms, Canvas, or your LMS.
+              </p>
+            </div>
+            <div class="embed-box short">
+              <iframe
+                title="Module 5.1 checkpoint"
+                src="https://viva.pressbooks.pub/kiddsandbox/wp-admin/admin-ajax.php?action=h5p_embed&amp;id=40"
+                loading="lazy"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="band reuse-band" id="reuse">
+        <div class="section-inner two-column">
+          <div>
+            <p class="eyebrow">Make this shareable</p>
+            <h2>What to add next</h2>
+            <p>
+              This first build houses the AI production ethics lesson. The site is
+              intentionally structured so more pieces from your two AI literacy courses
+              can become public modules without rebuilding the whole thing.
+            </p>
+          </div>
+          <div class="checklist" aria-label="Next steps checklist">
+            <label><input type="checkbox"> Add additional Canvas lessons as new sections or pages.</label>
+            <label><input type="checkbox"> Replace private Canvas image links with local images or openly licensed visuals.</label>
+            <label><input type="checkbox"> Rebuild Canvas quizzes as H5P, Forms, or lightweight web quizzes.</label>
+            <label><input type="checkbox"> Add licensing language for colleagues who want to remix the materials.</label>
+            <label><input type="checkbox"> Publish the folder through GitHub Pages, Netlify, or an institutional web space.</label>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Team AI Ethics Resource Hub</strong>
+        <p>Built from course materials for broader colleague and student use.</p>
+      </div>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite" hidden>Copied</div>
+    <script src="script.js"></script>
+  </body>
+</html>
