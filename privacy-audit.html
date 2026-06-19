@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Tool Privacy Audit | AI Ethics Resource Hub</title>
+    <meta
+      name="description"
+      content="A classroom-ready privacy audit for evaluating AI tools before teachers or students upload data, prompts, files, images, or other information."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="tool-page">
+    <header class="site-header" id="top">
+      <nav class="top-nav" aria-label="Primary navigation">
+        <a class="brand" href="index.html#top" aria-label="AI Ethics Resource Hub home">
+          <span class="brand-mark" aria-hidden="true">AI</span>
+          <span>Ethics Resource Hub</span>
+        </a>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span class="menu-lines" aria-hidden="true"></span>
+          <span class="sr-only">Menu</span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="index.html#questions">Guiding Questions</a>
+          <a href="index.html#tools">Tools</a>
+          <a href="index.html#modules">Modules</a>
+          <a href="index.html#cases">Cases</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero" aria-labelledby="page-title">
+        <div class="section-inner page-hero-grid">
+          <div>
+            <p class="eyebrow">Checklist</p>
+            <h1 id="page-title">AI Tool Privacy Audit</h1>
+            <p>
+              Use this audit before asking teachers or students to create accounts, upload files, paste student work, enter personal information, or use an AI tool for classroom tasks.
+            </p>
+            <div class="hero-actions" aria-label="Audit actions">
+              <a class="button primary" href="#audit">Start audit</a>
+              <button class="button secondary print-button" type="button" data-print>Print or save PDF</button>
+            </div>
+          </div>
+          <aside class="tool-summary" aria-label="Privacy audit summary">
+            <h2>Bottom Line</h2>
+            <p>If you cannot explain what data goes in, where it may go, and who can access it, pause before using the tool with students.</p>
+            <ul>
+              <li>What data is collected?</li>
+              <li>Can prompts or uploads train future models?</li>
+              <li>Who can access student information?</li>
+              <li>Can students opt out?</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="band compact">
+        <div class="section-inner split">
+          <div>
+            <p class="eyebrow">Purpose</p>
+            <h2>Make privacy visible before the tool enters the classroom.</h2>
+            <p class="lead">
+              AI tools can make teaching tasks easier, but they can also collect prompts, uploaded files, student work, usage data, images, voice, location, or account information. This audit helps preservice teachers ask practical privacy questions before adoption.
+            </p>
+          </div>
+          <div class="note-panel">
+            <h3>For Students Using This Page</h3>
+            <p>
+              Your notes stay in your browser while the page is open. They are not submitted, saved, or sent anywhere. Use the print button if you want a PDF copy of your responses.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <form class="worksheet" id="audit">
+        <section class="band muted">
+          <div class="section-inner">
+            <div class="section-heading">
+              <p class="eyebrow">Step 1</p>
+              <h2>Identify the tool and intended use.</h2>
+              <p>Privacy decisions depend on context. The same tool may be lower risk for teacher planning and higher risk for student-facing use.</p>
+            </div>
+            <div class="worksheet-grid">
+              <label class="field-card">
+                <span>Tool name and link</span>
+                <textarea rows="4" name="tool-name" placeholder="Name the tool, website, app, platform, extension, or AI feature."></textarea>
+              </label>
+              <label class="field-card">
+                <span>How would it be used?</span>
+                <textarea rows="4" name="intended-use" placeholder="Teacher planning, feedback, tutoring, assessment, translation, accessibility support, image generation, classroom chatbot, etc."></textarea>
+              </label>
+              <label class="field-card">
+                <span>Who would use it?</span>
+                <textarea rows="4" name="users" placeholder="Teacher only, individual students, whole class, families, school staff, or other users."></textarea>
+              </label>
+            </div>
+          </div>
+        </section>
+
+        <section class="band">
+          <div class="section-inner">
+            <div class="section-heading">
+              <p class="eyebrow">Step 2</p>
+              <h2>Map the data.</h2>
+              <p>List what people would need to enter, upload, connect, or reveal in order to use the tool.</p>
+            </div>
+            <div class="audit-list">
+              <article class="audit-item">
+                <div>
+                  <h3>Student identity</h3>
+                  <p>Names, emails, usernames, student IDs, photos, voice, demographics, disability status, or location.</p>
+                </div>
+                <label><input type="checkbox" name="student-identity"> This tool may collect or reveal this.</label>
+              </article>
+              <article class="audit-item">
+                <div>
+                  <h3>Student work</h3>
+                  <p>Writing, assessments, discussion posts, projects, images, recordings, reflections, or feedback history.</p>
+                </div>
+                <label><input type="checkbox" name="student-work"> This tool may collect or reveal this.</label>
+              </article>
+              <article class="audit-item">
+                <div>
+                  <h3>Learning or behavior data</h3>
+                  <p>Performance patterns, engagement, mistakes, intervention flags, attendance, browsing, or classroom behavior.</p>
+                </div>
+                <label><input type="checkbox" name="learning-data"> This tool may collect or reveal this.</label>
+              </article>
+              <article class="audit-item">
+                <div>
+                  <h3>Teacher or school data</h3>
+                  <p>Lesson materials, classroom rosters, institutional documents, curriculum, rubrics, or internal communications.</p>
+                </div>
+                <label><input type="checkbox" name="school-data"> This tool may collect or reveal this.</label>
+              </article>
+            </div>
+            <label class="field-card full-width">
+              <span>What information would be safest to avoid entering?</span>
+              <textarea rows="5" name="avoid-entering" placeholder="Name specific kinds of data that should not be pasted, uploaded, connected, or generated inside this tool."></textarea>
+            </label>
+          </div>
+        </section>
+
+        <section class="band muted">
+          <div class="section-inner">
+            <div class="section-heading">
+              <p class="eyebrow">Step 3</p>
+              <h2>Read for the questions that matter.</h2>
+              <p>Tool policies can be long and unclear. Focus first on these classroom-relevant questions.</p>
+            </div>
+            <div class="review-grid">
+              <article class="review-card">
+                <h3>Collection</h3>
+                <ul>
+                  <li>What data does the tool collect from prompts, uploads, accounts, or usage?</li>
+                  <li>Does it collect more than is needed for the classroom purpose?</li>
+                </ul>
+                <label>
+                  <span>Evidence or notes</span>
+                  <textarea rows="5" name="collection"></textarea>
+                </label>
+              </article>
+              <article class="review-card">
+                <h3>Storage and retention</h3>
+                <ul>
+                  <li>How long is data kept?</li>
+                  <li>Can the teacher, student, or school delete it?</li>
+                </ul>
+                <label>
+                  <span>Evidence or notes</span>
+                  <textarea rows="5" name="retention"></textarea>
+                </label>
+              </article>
+              <article class="review-card">
+                <h3>Training and reuse</h3>
+                <ul>
+                  <li>Can prompts, uploads, outputs, or feedback be used to train or improve models?</li>
+                  <li>Is there a clear opt-out?</li>
+                </ul>
+                <label>
+                  <span>Evidence or notes</span>
+                  <textarea rows="5" name="training"></textarea>
+                </label>
+              </article>
+              <article class="review-card">
+                <h3>Access and sharing</h3>
+                <ul>
+                  <li>Who can access the data: the company, vendors, school administrators, other users, or third parties?</li>
+                  <li>Is data shared for advertising, analytics, research, or product development?</li>
+                </ul>
+                <label>
+                  <span>Evidence or notes</span>
+                  <textarea rows="5" name="sharing"></textarea>
+                </label>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="band">
+          <div class="section-inner">
+            <div class="section-heading">
+              <p class="eyebrow">Step 4</p>
+              <h2>Check consent, transparency, and alternatives.</h2>
+              <p>Ethical privacy decisions are not only technical. They also involve whether students and families know what is happening and have meaningful choices.</p>
+            </div>
+            <div class="worksheet-grid">
+              <label class="field-card">
+                <span>How would students and families know AI is being used?</span>
+                <textarea rows="5" name="disclosure" placeholder="What would be disclosed, by whom, and in language families can understand?"></textarea>
+              </label>
+              <label class="field-card">
+                <span>Is there a reasonable opt-out or alternative?</span>
+                <textarea rows="5" name="opt-out" placeholder="What happens if a student or family does not want to use the tool?"></textarea>
+              </label>
+              <label class="field-card">
+                <span>Who is accountable if something goes wrong?</span>
+                <textarea rows="5" name="accountability" placeholder="Who reviews errors, privacy concerns, inappropriate outputs, or harmful decisions?"></textarea>
+              </label>
+            </div>
+          </div>
+        </section>
+
+        <section class="band muted">
+          <div class="section-inner decision-layout">
+            <div>
+              <p class="eyebrow">Step 5</p>
+              <h2>Make a privacy recommendation.</h2>
+              <p class="lead">
+                The goal is not to memorize every privacy policy. The goal is to decide whether the tool fits the educational purpose without asking students to give up more data, privacy, or control than the learning goal justifies.
+              </p>
+            </div>
+            <div class="decision-card">
+              <fieldset>
+                <legend>What is your recommendation?</legend>
+                <label><input type="radio" name="privacy-recommendation" value="teacher-only"> Teacher use only, with no student data</label>
+                <label><input type="radio" name="privacy-recommendation" value="student-use-conditions"> Student use only with safeguards, disclosure, and approval</label>
+                <label><input type="radio" name="privacy-recommendation" value="more-info"> Pause until more information is available</label>
+                <label><input type="radio" name="privacy-recommendation" value="do-not-use"> Do not use this tool in this context</label>
+              </fieldset>
+              <label>
+                <span>What safeguards or next steps are required?</span>
+                <textarea rows="7" name="next-steps" placeholder="Examples: remove student identifiers, use school-approved accounts, get approval, provide an alternative, check district policy, or choose a lower-risk tool."></textarea>
+              </label>
+            </div>
+          </div>
+        </section>
+
+        <section class="band compact">
+          <div class="section-inner">
+            <div class="section-heading">
+              <p class="eyebrow">Classroom Discussion</p>
+              <h2>Use the audit to compare risk and purpose.</h2>
+            </div>
+            <div class="prompt-grid">
+              <article>
+                <h3>Teacher Use vs. Student Use</h3>
+                <p>How does the privacy risk change when the teacher uses the tool privately versus asking students to use it directly?</p>
+              </article>
+              <article>
+                <h3>Data Minimization</h3>
+                <p>What is the least amount of data needed to accomplish the learning goal?</p>
+              </article>
+              <article>
+                <h3>Professional Boundary</h3>
+                <p>What would you never paste, upload, or connect to an AI tool as a teacher?</p>
+              </article>
+            </div>
+            <div class="worksheet-actions">
+              <button class="button primary" type="button" data-print>Print or save PDF</button>
+              <a class="button plain" href="ethics-review.html">Open ethics worksheet</a>
+              <a class="button plain" href="index.html#tools">Back to tools</a>
+            </div>
+          </div>
+        </section>
+      </form>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-inner footer-inner">
+        <p>AI Tool Privacy Audit</p>
+        <a href="#top">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
