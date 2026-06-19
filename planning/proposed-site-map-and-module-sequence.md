@@ -15,6 +15,15 @@ The hub should help faculty and preservice teachers move through four kinds of e
 
 The site should not feel like a long course shell copied out of Canvas. It should feel like a practical, navigable resource library where faculty can quickly find a module, case, checklist, or activity.
 
+## Guiding Questions
+
+Keep these questions visible as the hub is designed and revised:
+
+- What should preservice teachers know, notice, question, and be able to do to make ethical decisions about AI in education?
+- How can we help preservice teachers develop ethical judgment about AI, not just learn how to use AI tools?
+
+These questions should shape the site structure, module introductions, discussion prompts, and tool/checklist language.
+
 ## Recommended Top-Level Navigation
 
 ### Start Here
