@@ -570,6 +570,21 @@ input[type="radio"], input[type="checkbox"] { margin-top: 0.32rem; accent-color:
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1rem;
 }
+.three-column-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+.three-column-grid article {
+  padding: 1.15rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: 0 10px 28px rgba(24,35,31,0.08);
+}
+.three-column-grid p, .three-column-grid li {
+  color: var(--muted);
+}
 .discussion-list {
   margin: 0;
   padding-left: 1.25rem;
@@ -600,7 +615,7 @@ input[type="radio"], input[type="checkbox"] { margin-top: 0.32rem; accent-color:
   }
   .nav-links.is-open { display: flex; }
   .nav-links a { border-radius: 6px; }
-  .split, .question-grid, .resource-grid, .featured-grid, .case-grid, .page-hero-grid, .worksheet-grid, .review-grid, .prompt-grid, .decision-layout, .audit-item, .module-overview, .goal-grid, .two-column-panel, .framework-table, .facilitator-grid, .two-card-grid, .proposal-grid, .simulation-card, .embed-card, .case-layout, .stakeholder-grid { grid-template-columns: 1fr; }
+  .split, .question-grid, .resource-grid, .featured-grid, .case-grid, .page-hero-grid, .worksheet-grid, .review-grid, .prompt-grid, .decision-layout, .audit-item, .module-overview, .goal-grid, .two-column-panel, .framework-table, .facilitator-grid, .two-card-grid, .proposal-grid, .simulation-card, .embed-card, .case-layout, .stakeholder-grid, .three-column-grid { grid-template-columns: 1fr; }
   .row-heading { display: block; }
   .filter-controls { justify-content: flex-start; margin-top: 1rem; }
   .module-item { grid-template-columns: auto minmax(0, 1fr); }
@@ -620,8 +635,8 @@ input[type="radio"], input[type="checkbox"] { margin-top: 0.32rem; accent-color:
   body { background: #fff; color: #000; }
   .page-hero, .band, .band.compact { padding: 1rem 0; background: #fff; color: #000; }
   .section-inner { width: 100%; }
-  .page-hero-grid, .split, .worksheet-grid, .review-grid, .prompt-grid, .decision-layout, .audit-item, .module-overview, .goal-grid, .activity-flow article, .two-column-panel, .framework-table, .facilitator-grid, .two-card-grid, .proposal-grid, .simulation-card, .embed-card, .case-layout, .stakeholder-grid { display: block; }
-  .tool-summary, .note-panel, .field-card, .review-card, .decision-card, .prompt-grid article, .audit-item, .module-sidebar, .goal-grid article, .activity-flow article, .facilitator-grid article, .framework-table article, .two-card-grid article, .proposal-grid article, .callout-card, .simulation-card, .activity-prompt, .embed-card, .lesson-image, .case-brief, .stakeholder-grid article {
+  .page-hero-grid, .split, .worksheet-grid, .review-grid, .prompt-grid, .decision-layout, .audit-item, .module-overview, .goal-grid, .activity-flow article, .two-column-panel, .framework-table, .facilitator-grid, .two-card-grid, .proposal-grid, .simulation-card, .embed-card, .case-layout, .stakeholder-grid, .three-column-grid { display: block; }
+  .tool-summary, .note-panel, .field-card, .review-card, .decision-card, .prompt-grid article, .audit-item, .module-sidebar, .goal-grid article, .activity-flow article, .facilitator-grid article, .framework-table article, .two-card-grid article, .proposal-grid article, .callout-card, .simulation-card, .activity-prompt, .embed-card, .lesson-image, .case-brief, .stakeholder-grid article, .three-column-grid article {
     break-inside: avoid;
     box-shadow: none;
     margin-bottom: 0.8rem;
