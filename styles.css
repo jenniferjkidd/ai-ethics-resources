@@ -231,7 +231,7 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.62rem); }
 .card-meta span:last-child { background: #fff5d8; color: #6a4b0a; }
 .resource-card p, .case-grid p { color: var(--muted); }
 .resource-card ul { margin: 0.8rem 0 0; padding-left: 1.1rem; color: var(--muted); }
-.resource-card a { font-weight: 760; }
+.resource-card a, .case-grid a { font-weight: 760; }
 .resource-card.is-hidden { display: none; }
 
 .filter-controls { display: flex; flex-wrap: wrap; gap: 0.45rem; justify-content: flex-end; }
@@ -546,6 +546,38 @@ input[type="radio"], input[type="checkbox"] { margin-top: 0.32rem; accent-color:
 }
 .compact-image img { max-height: 260px; }
 
+.case-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.42fr);
+  gap: clamp(1.5rem, 5vw, 4rem);
+  align-items: start;
+}
+.case-brief, .stakeholder-grid article {
+  padding: 1.15rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: 0 10px 28px rgba(24,35,31,0.08);
+}
+.case-brief {
+  border-top: 5px solid var(--gold);
+}
+.case-brief p, .case-brief li, .stakeholder-grid p, .discussion-list li {
+  color: var(--muted);
+}
+.stakeholder-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+.discussion-list {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+.discussion-list li + li {
+  margin-top: 0.55rem;
+}
+
 .site-footer { padding: 1.4rem clamp(1rem, 4vw, 2rem); background: #0b1512; color: #fff; }
 .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
 .site-footer a { color: #fff; }
@@ -568,7 +600,7 @@ input[type="radio"], input[type="checkbox"] { margin-top: 0.32rem; accent-color:
   }
   .nav-links.is-open { display: flex; }
   .nav-links a { border-radius: 6px; }
-  .split, .question-grid, .resource-grid, .featured-grid, .case-grid, .page-hero-grid, .worksheet-grid, .review-grid, .prompt-grid, .decision-layout, .audit-item, .module-overview, .goal-grid, .two-column-panel, .framework-table, .facilitator-grid, .two-card-grid, .proposal-grid, .simulation-card, .embed-card { grid-template-columns: 1fr; }
+  .split, .question-grid, .resource-grid, .featured-grid, .case-grid, .page-hero-grid, .worksheet-grid, .review-grid, .prompt-grid, .decision-layout, .audit-item, .module-overview, .goal-grid, .two-column-panel, .framework-table, .facilitator-grid, .two-card-grid, .proposal-grid, .simulation-card, .embed-card, .case-layout, .stakeholder-grid { grid-template-columns: 1fr; }
   .row-heading { display: block; }
   .filter-controls { justify-content: flex-start; margin-top: 1rem; }
   .module-item { grid-template-columns: auto minmax(0, 1fr); }
@@ -588,8 +620,8 @@ input[type="radio"], input[type="checkbox"] { margin-top: 0.32rem; accent-color:
   body { background: #fff; color: #000; }
   .page-hero, .band, .band.compact { padding: 1rem 0; background: #fff; color: #000; }
   .section-inner { width: 100%; }
-  .page-hero-grid, .split, .worksheet-grid, .review-grid, .prompt-grid, .decision-layout, .audit-item, .module-overview, .goal-grid, .activity-flow article, .two-column-panel, .framework-table, .facilitator-grid, .two-card-grid, .proposal-grid, .simulation-card, .embed-card { display: block; }
-  .tool-summary, .note-panel, .field-card, .review-card, .decision-card, .prompt-grid article, .audit-item, .module-sidebar, .goal-grid article, .activity-flow article, .facilitator-grid article, .framework-table article, .two-card-grid article, .proposal-grid article, .callout-card, .simulation-card, .activity-prompt, .embed-card, .lesson-image {
+  .page-hero-grid, .split, .worksheet-grid, .review-grid, .prompt-grid, .decision-layout, .audit-item, .module-overview, .goal-grid, .activity-flow article, .two-column-panel, .framework-table, .facilitator-grid, .two-card-grid, .proposal-grid, .simulation-card, .embed-card, .case-layout, .stakeholder-grid { display: block; }
+  .tool-summary, .note-panel, .field-card, .review-card, .decision-card, .prompt-grid article, .audit-item, .module-sidebar, .goal-grid article, .activity-flow article, .facilitator-grid article, .framework-table article, .two-card-grid article, .proposal-grid article, .callout-card, .simulation-card, .activity-prompt, .embed-card, .lesson-image, .case-brief, .stakeholder-grid article {
     break-inside: avoid;
     box-shadow: none;
     margin-bottom: 0.8rem;
