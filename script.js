@@ -38,3 +38,30 @@ document.querySelectorAll("[data-print]").forEach((button) => {
     window.print();
   });
 });
+
+document.querySelectorAll(".lesson-image img").forEach((image) => {
+  const markMissing = () => {
+    const figure = image.closest(".lesson-image");
+    if (figure) {
+      figure.classList.add("image-missing");
+    }
+    image.remove();
+  };
+
+  image.addEventListener("error", markMissing);
+  image.addEventListener("load", () => {
+    if (image.naturalWidth === 0) {
+      markMissing();
+    }
+  });
+
+  if (image.complete && image.naturalWidth === 0) {
+    markMissing();
+  }
+
+  window.setTimeout(() => {
+    if (image.isConnected && image.complete && image.naturalWidth === 0) {
+      markMissing();
+    }
+  }, 1200);
+});

@@ -445,6 +445,107 @@ input[type="radio"], input[type="checkbox"] { margin-top: 0.32rem; accent-color:
 }
 .facilitator-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
+.canvas-lesson .section-heading { max-width: 900px; }
+.lesson-hero { background-position: center; }
+.lesson-framework article { border-top: 5px solid var(--green); }
+.case-study {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1.2rem 0;
+}
+.case-study details {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: 0 10px 28px rgba(24,35,31,0.08);
+  overflow: hidden;
+}
+.case-study summary {
+  cursor: pointer;
+  padding: 1rem 1.1rem;
+  background: #fbfdfb;
+  color: var(--ink);
+  font-size: 1.08rem;
+  font-weight: 800;
+}
+.detail-content { padding: 1rem 1.15rem; }
+.detail-content p, .detail-content li { color: var(--muted); }
+.two-card-grid, .proposal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.two-card-grid article, .proposal-grid article, .callout-card, .simulation-card, .activity-prompt, .embed-card {
+  padding: 1.15rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: 0 10px 28px rgba(24,35,31,0.08);
+}
+.callout-card {
+  margin: 1.2rem 0;
+  border-left: 6px solid var(--green);
+}
+.simulation-card, .embed-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.45fr);
+  gap: 1.2rem;
+  align-items: center;
+  margin: 1.2rem 0;
+}
+.embed-card { grid-template-columns: minmax(260px, 0.42fr) minmax(0, 1fr); align-items: start; }
+.responsive-embed {
+  position: relative;
+  min-height: 440px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #f8faf8;
+}
+.responsive-embed iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 440px;
+  border: 0;
+}
+.poll-embed, .checkpoint-embed { min-height: 360px; }
+.poll-embed iframe, .checkpoint-embed iframe { min-height: 360px; }
+.lesson-image {
+  margin: 1.25rem 0;
+  padding: 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: 0 10px 28px rgba(24,35,31,0.08);
+}
+.lesson-image img {
+  display: block;
+  max-height: 380px;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 6px;
+  background: #eef4f1;
+}
+.lesson-image figcaption {
+  margin-top: 0.55rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+.lesson-image.image-missing::before {
+  display: grid;
+  place-items: center;
+  min-height: 180px;
+  padding: 1rem;
+  border: 1px dashed var(--line);
+  border-radius: 6px;
+  background: #eef4f1;
+  color: var(--muted);
+  text-align: center;
+  content: "Canvas image placeholder: export this image from Canvas and add it to the site assets.";
+}
+.compact-image img { max-height: 260px; }
+
 .site-footer { padding: 1.4rem clamp(1rem, 4vw, 2rem); background: #0b1512; color: #fff; }
 .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
 .site-footer a { color: #fff; }
@@ -467,7 +568,7 @@ input[type="radio"], input[type="checkbox"] { margin-top: 0.32rem; accent-color:
   }
   .nav-links.is-open { display: flex; }
   .nav-links a { border-radius: 6px; }
-  .split, .question-grid, .resource-grid, .featured-grid, .case-grid, .page-hero-grid, .worksheet-grid, .review-grid, .prompt-grid, .decision-layout, .audit-item, .module-overview, .goal-grid, .two-column-panel, .framework-table, .facilitator-grid { grid-template-columns: 1fr; }
+  .split, .question-grid, .resource-grid, .featured-grid, .case-grid, .page-hero-grid, .worksheet-grid, .review-grid, .prompt-grid, .decision-layout, .audit-item, .module-overview, .goal-grid, .two-column-panel, .framework-table, .facilitator-grid, .two-card-grid, .proposal-grid, .simulation-card, .embed-card { grid-template-columns: 1fr; }
   .row-heading { display: block; }
   .filter-controls { justify-content: flex-start; margin-top: 1rem; }
   .module-item { grid-template-columns: auto minmax(0, 1fr); }
@@ -487,8 +588,8 @@ input[type="radio"], input[type="checkbox"] { margin-top: 0.32rem; accent-color:
   body { background: #fff; color: #000; }
   .page-hero, .band, .band.compact { padding: 1rem 0; background: #fff; color: #000; }
   .section-inner { width: 100%; }
-  .page-hero-grid, .split, .worksheet-grid, .review-grid, .prompt-grid, .decision-layout, .audit-item, .module-overview, .goal-grid, .activity-flow article, .two-column-panel, .framework-table, .facilitator-grid { display: block; }
-  .tool-summary, .note-panel, .field-card, .review-card, .decision-card, .prompt-grid article, .audit-item, .module-sidebar, .goal-grid article, .activity-flow article, .facilitator-grid article, .framework-table article {
+  .page-hero-grid, .split, .worksheet-grid, .review-grid, .prompt-grid, .decision-layout, .audit-item, .module-overview, .goal-grid, .activity-flow article, .two-column-panel, .framework-table, .facilitator-grid, .two-card-grid, .proposal-grid, .simulation-card, .embed-card { display: block; }
+  .tool-summary, .note-panel, .field-card, .review-card, .decision-card, .prompt-grid article, .audit-item, .module-sidebar, .goal-grid article, .activity-flow article, .facilitator-grid article, .framework-table article, .two-card-grid article, .proposal-grid article, .callout-card, .simulation-card, .activity-prompt, .embed-card, .lesson-image {
     break-inside: avoid;
     box-shadow: none;
     margin-bottom: 0.8rem;
