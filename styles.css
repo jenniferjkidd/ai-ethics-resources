@@ -234,6 +234,47 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.62rem); }
 .resource-card a, .case-grid a { font-weight: 760; }
 .resource-card.is-hidden { display: none; }
 
+.pathway-stack {
+  display: grid;
+  gap: 1.2rem;
+}
+.pathway-card {
+  padding: clamp(1rem, 3vw, 1.4rem);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: 0 10px 28px rgba(24,35,31,0.08);
+}
+.pathway-header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.pathway-header p:not(.eyebrow) {
+  max-width: 760px;
+  color: var(--muted);
+}
+.pathway-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+.pathway-grid div {
+  padding: 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fbfdfb;
+}
+.pathway-grid h3 {
+  font-size: 1rem;
+}
+.pathway-grid p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
 .filter-controls { display: flex; flex-wrap: wrap; gap: 0.45rem; justify-content: flex-end; }
 .filter-button {
   border: 1px solid var(--line);
@@ -615,7 +656,8 @@ input[type="radio"], input[type="checkbox"] { margin-top: 0.32rem; accent-color:
   }
   .nav-links.is-open { display: flex; }
   .nav-links a { border-radius: 6px; }
-  .split, .question-grid, .resource-grid, .featured-grid, .case-grid, .page-hero-grid, .worksheet-grid, .review-grid, .prompt-grid, .decision-layout, .audit-item, .module-overview, .goal-grid, .two-column-panel, .framework-table, .facilitator-grid, .two-card-grid, .proposal-grid, .simulation-card, .embed-card, .case-layout, .stakeholder-grid, .three-column-grid { grid-template-columns: 1fr; }
+  .split, .question-grid, .resource-grid, .featured-grid, .case-grid, .page-hero-grid, .worksheet-grid, .review-grid, .prompt-grid, .decision-layout, .audit-item, .module-overview, .goal-grid, .two-column-panel, .framework-table, .facilitator-grid, .two-card-grid, .proposal-grid, .simulation-card, .embed-card, .case-layout, .stakeholder-grid, .three-column-grid, .pathway-grid { grid-template-columns: 1fr; }
+  .pathway-header { display: block; }
   .row-heading { display: block; }
   .filter-controls { justify-content: flex-start; margin-top: 1rem; }
   .module-item { grid-template-columns: auto minmax(0, 1fr); }
@@ -635,8 +677,8 @@ input[type="radio"], input[type="checkbox"] { margin-top: 0.32rem; accent-color:
   body { background: #fff; color: #000; }
   .page-hero, .band, .band.compact { padding: 1rem 0; background: #fff; color: #000; }
   .section-inner { width: 100%; }
-  .page-hero-grid, .split, .worksheet-grid, .review-grid, .prompt-grid, .decision-layout, .audit-item, .module-overview, .goal-grid, .activity-flow article, .two-column-panel, .framework-table, .facilitator-grid, .two-card-grid, .proposal-grid, .simulation-card, .embed-card, .case-layout, .stakeholder-grid, .three-column-grid { display: block; }
-  .tool-summary, .note-panel, .field-card, .review-card, .decision-card, .prompt-grid article, .audit-item, .module-sidebar, .goal-grid article, .activity-flow article, .facilitator-grid article, .framework-table article, .two-card-grid article, .proposal-grid article, .callout-card, .simulation-card, .activity-prompt, .embed-card, .lesson-image, .case-brief, .stakeholder-grid article, .three-column-grid article {
+  .page-hero-grid, .split, .worksheet-grid, .review-grid, .prompt-grid, .decision-layout, .audit-item, .module-overview, .goal-grid, .activity-flow article, .two-column-panel, .framework-table, .facilitator-grid, .two-card-grid, .proposal-grid, .simulation-card, .embed-card, .case-layout, .stakeholder-grid, .three-column-grid, .pathway-grid { display: block; }
+  .tool-summary, .note-panel, .field-card, .review-card, .decision-card, .prompt-grid article, .audit-item, .module-sidebar, .goal-grid article, .activity-flow article, .facilitator-grid article, .framework-table article, .two-card-grid article, .proposal-grid article, .callout-card, .simulation-card, .activity-prompt, .embed-card, .lesson-image, .case-brief, .stakeholder-grid article, .three-column-grid article, .pathway-card, .pathway-grid div {
     break-inside: avoid;
     box-shadow: none;
     margin-bottom: 0.8rem;
