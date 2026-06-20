@@ -267,7 +267,7 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.62rem); }
   font-weight: 800;
 }
 .module-item p { margin: 0; color: var(--muted); }
-.module-item a { display: inline-block; margin-top: 0.45rem; font-weight: 760; }
+.module-item a { display: inline-block; margin-top: 0.45rem; margin-right: 0.85rem; font-weight: 760; }
 .status.ready { background: #e8f0ec; color: var(--green-dark); white-space: nowrap; }
 
 .case-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
